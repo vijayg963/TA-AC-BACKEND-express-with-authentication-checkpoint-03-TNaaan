@@ -1,0 +1,15 @@
+<header class="header flex-row dashboard-header">
+  <a href="/" class="logo">Expense Tracker</a>
+  <nav>
+    <ul class="flex-row">
+      <li><a href="/">home</a></li>
+      <% if(user){%>
+      <li><a href="/dashboard">dashbaord</a></li>
+      <li><a href="/users/logout" class="btn">logout</a></li>
+      <%}%> <% if(!user){%>
+      <li><a href="/users/register">register</a></li>
+      <li><a href="/users/login" class="btn">login</a></li>
+      <%}%>
+    </ul>
+  </nav>
+</header>

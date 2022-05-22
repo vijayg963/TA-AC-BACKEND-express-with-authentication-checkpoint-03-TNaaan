@@ -1,0 +1,19 @@
+<%- include('./partials/allLinks.ejs')%> <%- include('./partials/header.ejs')%>
+<main>
+  <section id="formstyle">
+    <h2>login to our website</h2>
+    <form action="/users/login" class="w-48" method="POST">
+      <input type="text" name="email" placeholder="Enter your email here" />
+      <input
+        type="text"
+        name="password"
+        placeholder=" Enter your password here"
+      />
+      <input type="submit" type="submit" />
+    </form>
+    <div class="socialLoginContainer flex-row">
+      <a href="/auth/google"> login by google</a>
+      <a href="/auth/github">login by github</a>
+    </div>
+  </section>
+</main>

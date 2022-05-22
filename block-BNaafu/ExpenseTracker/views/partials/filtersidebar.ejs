@@ -1,0 +1,21 @@
+<script src ="/expenseTracker/public/javascripts/index.js"></script>
+<aside>
+  <div class="filterBycategory-widget">
+    <h2>Exepense Categories :</h2>
+    <nav>
+      <ul>
+        <%expensCategorie.forEach((cv)=>{%>
+        <li><a href="/dashboard?category=<%=cv%>"><%= cv%></a></li>
+        <%})%>
+      </ul>
+    </nav>
+    <nav class="incomecategories-container">
+        <h2> Income  categories :</h2>
+        <ul>
+            <%incomeCategories.forEach(cv=>{%>
+                <li><a href="/dashboard?incomecategory=<%=cv%>""><%= cv%></a></li>
+            <%})%>
+        </ul>
+    </nav>
+  </div>
+</aside>

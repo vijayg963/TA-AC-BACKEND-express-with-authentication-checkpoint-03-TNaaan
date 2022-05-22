@@ -1,0 +1,19 @@
+<div class="user-income-container w-100 form-container">
+  <h2>Enter income</h2>
+  <form action="/dashboard?income=userincome" method="GET">
+    <input
+      type="text"
+      name="name"
+      placeholder="Enter the source of the income"
+    />
+    <label for="incomesource"> Source of income :</label>
+    <select name="category" value="salary" id="incomesource">
+      <option value="salary">salary</option>
+      <option value="trading">trading</option>
+      <option value="buisness">buisness</option>
+    </select>
+    <input type="number" name="amount" placeholder="enter the amount here" />
+    <input type="date" name="date" placeholder=" Enter the date here" />
+    <input type="submit" value="submit" class="submit-btn" />
+  </form>
+</div>
