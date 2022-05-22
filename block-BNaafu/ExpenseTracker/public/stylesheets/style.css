@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-family: 'Poppins', 'sans-serif';
+  font-size: 1.6rem;
+}
+html body section {
+  padding: 2rem 9%;
+}
+html body a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column,
+.dashboard-wrapper aside,
+.dashboard-wrapper aside form,
+#formstyle form {
+  display: flex;
+  flex-direction: column;
+}
+
+.center,
+#formstyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-48 {
+  width: 48%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.btn {
+  background-color: #ee6f57;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.8rem 2.4rem;
+  border-radius: 2rem;
+}
+
+form input {
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+.submit-btn {
+  background-color: #ee6f57;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+}
+
+.header {
+  padding: 2rem 9%;
+  background-color: #fff;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.header .logo {
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #7400b8;
+}
+.header nav a {
+  margin-left: 2rem;
+  color: #000;
+  text-transform: capitalize;
+}
+.header nav a:hover {
+  color: #7400b8;
+}
+.header .btn {
+  color: #fff;
+}
+
+.hero {
+  height: 80vh;
+}
+.hero h1 {
+  font-weight: 700;
+  font-size: 3.6rem;
+  text-transform: capitalize;
+}
+
+.hidden {
+  display: none;
+}
+
+.dashboard-header {
+  padding: 2rem 5%;
+}
+
+.dashboard-wrapper {
+  padding: 2rem 5%;
+  align-items: flex-start;
+}
+.dashboard-wrapper aside {
+  flex: 0 1 19%;
+  font-size: 1.5rem;
+}
+.dashboard-wrapper aside form {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.dashboard-wrapper aside input {
+  width: 100%;
+  padding: 0.5rem;
+}
+.dashboard-wrapper section {
+  flex: 0 1 57%;
+  padding: 0 2rem;
+  height: 100vh;
+  border-right: 0.2rem solid #dddddd;
+  border-left: 0.2rem solid #dddddd;
+}
+.dashboard-wrapper h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.user-dashboard {
+  padding: 0;
+}
+
+.expense-container {
+  padding: 1rem 14%;
+}
+.expense-container h2 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.expense-container span {
+  font-weight: 900;
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.history-container h2 {
+  text-align: left;
+  padding: 1rem 0;
+  border-top: 0.2rem solid #dddddd;
+}
+.history-container .expense-history {
+  padding: 1rem;
+  border: 0.1rem solid;
+  margin-bottom: 2rem;
+  border: 0.1rem solid #dddddd;
+  border-right: 0.5rem solid rgba(255, 31, 31, 0.945);
+}
+.history-container span {
+  font-weight: 700;
+  color: rgba(255, 31, 31, 0.945);
+}
+.history-container .income-history {
+  border-right: 0.5rem solid rgba(16, 173, 63, 0.945);
+}
+.history-container .income-history span {
+  color: rgba(16, 173, 63, 0.945);
+}
+
+#formstyle {
+  flex-direction: column;
+  padding: 4% 0;
+}
+#formstyle input {
+  padding: 0.8rem;
+  margin: 1rem;
+}
+
+.socialLoginContainer a {
+  display: inline-block;
+  margin: 0 2rem;
+}

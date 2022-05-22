@@ -1,0 +1,21 @@
+<div class="user-income-container w-100 form-container">
+  <h2>Enter your expense :</h2>
+  <form action="/dashboard?" method="GET">
+    <input type="text" name="name" placeholder="expense name" />
+    <label for="expense"> enter the expense category:</label>
+    <select name="category" value="lifestyle" id="expense">
+      <option value="lifestyle">lifestyle</option>
+      <option value="health">health</option>
+      <option value="grocery">grocery</option>
+      <option value="investment">investment</option>
+      <option value="others">others</option>
+    </select>
+    <input type="number" name="amount" placeholder="enter the amount here" />
+    <input
+      type="date"
+      name="date"
+      placeholder=" Enter  the date of the expense"
+    />
+    <input type="submit" value="submit" class="submit-btn" />
+  </form>
+</div>

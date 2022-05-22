@@ -1,0 +1,45 @@
+<%- include('./partials/header.ejs')%> <%- include('./partials/allLinks.ejs')%>
+<main class="dashboard-wrapper flex-row">
+  <!-- left sidebar  to add  user income and the user expense -->
+  <aside class="userdata-contianer flex-row w-100 right-border">
+    <%- include('./partials/userincome.ejs')%> <%-
+    include('./partials/addexpenses.ejs')%>
+  </aside>
+  <section class="user-dashboard">
+    <div class="expense-container w-100 flex-row">
+      <div class="income-container">
+        <h2>Total income :</h2>
+        <span><%= totalIncome%></span>
+      </div>
+      <div class="expense-container">
+        <h2>Expenses</h2>
+        <span> <%= totalExpense%></span>
+      </div>
+    </div>
+
+    <div class="history-container">
+      <%if(categoryData){%>
+      <h2>History :</h2>
+      <%categoryData.forEach(cv=>{ %>
+      <div class="flex-row expense-history">
+        <span><%= cv.amount%></span>
+        <p><%= cv.name%></p>
+        <p><%= cv.date = cv.date%></p>
+      </div>
+      <%})%> <%}%> <%if(incomeData){%>
+      <h2>History :</h2>
+      <%incomeData.forEach(cv=>{ %>
+      <div class="flex-row expense-history income-history">
+        <span><%= cv.amount%></span>
+        <p><%= cv.name%></p>
+        <p><%= cv.date = cv.date%></p>
+      </div>
+      <%})%> <%}%>
+    </div>
+  </section>
+  <!-- left sidebar for the user filters   -->
+  <aside class="left-border">
+    <%- include('./partials/filtersidebar.ejs')%> <%-
+    include('./partials/datewise.ejs')%>
+  </aside>
+</main>
