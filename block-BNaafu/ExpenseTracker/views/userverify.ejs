@@ -1,0 +1,6 @@
+<%- include('./partials/allLinks.ejs')%> <%- include('./partials/header.ejs')%>
+<section id="formstyle">
+  <h2>Verify your email</h2>
+  <input type="text" value="<%= user.email%>" />
+  <a href="/users/verificationcode" class="btn">verify email</a>
+</section>

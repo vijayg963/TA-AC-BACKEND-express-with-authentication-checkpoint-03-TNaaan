@@ -1,0 +1,12 @@
+<%- include('./partials/allLinks.ejs')%> <%- include('./partials/header.ejs')%>
+<section id="formstyle" class="h-screen flex justify-center items-center">
+  <h2>Enter the verification code here</h2>
+  <form action="/users/verificationcode" method="POST">
+    <input
+      type="number"
+      name="verificationCode"
+      placeholder="Enter  the verification code here"
+    />
+    <input type="submit" value="submit" />
+  </form>
+</section>
